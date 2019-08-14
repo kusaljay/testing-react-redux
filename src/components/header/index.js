@@ -4,10 +4,10 @@ import styles from './header.module.scss';
 
 const Header = (props) => {
   return (
-    <header>
+    <header data-test="header-component">
       <div className={styles.wrap}>
-        <div className="logo">
-          <img src={Logo} alt="logo" />
+        <div className={styles.logo}>
+          <img data-test="logo-img" src={Logo} alt="logo" />
         </div>
       </div>
     </header>
